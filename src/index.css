@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
 @font-face {
   font-family: "Humming";
   src: url("assets/fonts//Humming.otf");
 }
-@import "tailwindcss";
 
 @theme {
   --color-light: #fcfaf7;
@@ -12,6 +13,7 @@
   --color-orange: #f0531c;
   --color-orange-light: #ffa74f;
 
+  --color-gray-text: #b7bde0;
   --color-white: #f9f9fc;
   --color-black: #000000;
   --color-red: #eb4b4b;
@@ -26,5 +28,5 @@
 
   --font-humming: "Humming", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --font-inter-bold: "InterBold", sans-serif;
+  --font-IFlower: "Indie Flower", cursive;
 }

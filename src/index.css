@@ -1,1 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: "Humming";
+  src: url("assets/fonts//Humming.otf");
+}
 @import "tailwindcss";
+
+@theme {
+  --color-light: #fcfaf7;
+  --color-dark: #0d0d0d;
+
+  --color-orange: #f0531c;
+  --color-orange-light: #ffa74f;
+
+  --color-white: #f9f9fc;
+  --color-black: #000000;
+  --color-red: #eb4b4b;
+  --color-gray: #666d84;
+  --color-brown: #332a21;
+  --color-green: #2cdb00;
+
+  --color-linear-gradient-1: #00b23a;
+  --color-linear-gradient-2: #f8aa2d;
+  --color-linear-gradient-3: #884beb;
+  --color-linear-gradient-4: #ffb020;
+
+  --font-humming: "Humming", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-inter-bold: "InterBold", sans-serif;
+}

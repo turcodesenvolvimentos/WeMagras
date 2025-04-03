@@ -1093,6 +1093,11 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+swiper@^11.2.6:
+  version "11.2.6"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-11.2.6.tgz"
+  integrity sha512-8aXpYKtjy3DjcbzZfz+/OX/GhcU5h+looA6PbAzHMZT6ESSycSp9nAjPCenczgJyslV+rUGse64LMGpWE3PX9Q==
+
 tailwindcss@^4.0.17, tailwindcss@4.1.2:
   version "4.1.2"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.1.2.tgz"

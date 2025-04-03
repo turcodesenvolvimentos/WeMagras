@@ -6,12 +6,12 @@ import ImageGabi from "./assets/icons/image.png";
 
 function App() {
   return (
-    <div className="overflow-y-auto">
-      <div className="flex flex-col-reverse md:flex-row h-screen bg-light dark:bg-dark items-center justify-center">
+    <div className="overflow-y-auto overflow-x-hidden h-screen bg-light dark:bg-dark">
+      <p className="text-4xl md:text-8xl font-humming md:mx-20 mt-5 mx-10 text-orange">
+        WeMagras
+      </p>
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center">
         <div className="w-full md:w-2/3 md:h-auto p-4 text-white flex flex-col">
-          <p className="text-4xl md:text-7xl font-humming text-center md:mx-20 text-orange">
-            WeMagras
-          </p>
           <p className="text-center font-bold my-6 text-orange-light dark:text-orange-light">
             A JORNADA PARA SUA MELHOR VERSÃO COMEÇA AGORA!
           </p>
@@ -49,17 +49,19 @@ function App() {
         </p>
         <img src={Arrow} alt="Seta" className="mt-2 w-12" />
       </div> */}
-      <div className="flex flex-col md:flex-row py-10 px-5 justify-center gap-5 bg-light dark:bg-dark">
+      <div className="flex flex-col md:flex-row py-10 px-5 justify-center items-center gap-5 bg-light dark:bg-dark">
         {plans.map((item, index) => (
-          <div className="border-2 border-orange dark:border-orange-light w-sm h-md px-8 py-10 rounded-4xl">
+          <div className="border-2 border-orange dark:border-orange w-sm md:w-md min-h-110 px-8 py-10 rounded-4xl flex flex-col h-full">
             {index === 1 && (
-              <div className="flex absolute left-1/2 transform -translate-x-1/2">
-                <p className="font-inter text-orange-light text-xs bg-gray/10 px-2 rounded-sm">
-                  RECOMENDADO
-                </p>
-                <p className="font-inter text-red text-xs bg-red/10 px-2 rounded-sm">
-                  MAIS COMPRADO
-                </p>
+              <div className="flex justify-between">
+                <div className="flex justify-center items-center bg-gray/10 px-2 rounded-sm">
+                  <p className="font-inter text-orange-light text-xs">
+                    RECOMENDADO
+                  </p>
+                </div>
+                <div className="flex justify-center items-center bg-red/10 px-2 rounded-sm">
+                  <p className="font-inter text-red text-xs">MAIS COMPRADO</p>
+                </div>
               </div>
             )}
             <p className="font-inter text-xl font-black my-5 text-black dark:text-white">
@@ -69,12 +71,25 @@ function App() {
               {item.description}
             </p>
             <div className="flex flex-col mt-5 mb-10">
-              {item.items.map((item) => (
-                <div className="flex flex-row items-start gap-3">
+              {item.items.map((item, i) => (
+                <div key={i} className="flex flex-row items-start gap-3">
                   <img src={Check} alt="Check" className="mt-2 w-3" />
                   <p className="font-inter text-sm text-gray">{item}</p>
                 </div>
               ))}
+            </div>
+            <div className="flex justify-center mt-auto">
+              <button
+                className={`${index === 1 ? "bg-orange" : "bg-gray"} w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow`}
+              >
+                <p className="font-inter text-sm text-white">
+                  {index === 0
+                    ? "Aproveite a oferta e emagreça agora"
+                    : index === 1
+                      ? "Aproveite a oferta e entre na comunidade!"
+                      : "Entre para Lista de Espera"}
+                </p>
+              </button>
             </div>
           </div>
         ))}

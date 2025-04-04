@@ -30,3 +30,56 @@
   --font-inter: "Inter", sans-serif;
   --font-IFlower: "Indie Flower", cursive;
 }
+
+.background_orange {
+  background: var(--color-orange);
+}
+
+.text_orange {
+  color: var(--color-orange)
+}
+
+.background_white {
+  background: var(--color-white);
+}
+
+.insert_white_background_with_padding {
+  padding: 25px;
+  place-self: center;
+  background: var(--color-white);
+  border-radius: 60px !important;
+}
+
+#player {
+  overflow: hidden;
+  border-radius: 30px !important;
+}
+
+.max_width987{
+  max-width: 987px;
+}
+
+.max_width678{
+  max-width: 678px;
+}
+
+.gabi_letter {
+  /* margin-right: calc(25% + 875px); */
+  margin-right: 60%;
+  justify-self: anchor-center;
+}
+
+@keyframes pulse-zoom {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+.pulse-button {
+  animation: pulse-zoom 2s infinite;
+}

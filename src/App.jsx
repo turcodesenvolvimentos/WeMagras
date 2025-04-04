@@ -8,30 +8,38 @@ import ImageCarousel from "./utils/components/ImageCarousel.jsx";
 function App() {
   return (
     <div className="overflow-y-auto overflow-x-hidden h-screen bg-light dark:bg-dark">
-      <div>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center">
-          <div className="w-full md:w-2/3 md:h-auto p-4 text-white flex flex-col">
+      <div className="flex flex-col">
+        <div className="flex flex-col-reverse md:flex-row justify-center">
+          <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col">
             <p className="text-4xl md:text-8xl font-humming md:mx-20 mt-5 mx-10 text-orange">
               WeMagras
             </p>
-            <p className="text-center font-bold my-6 text-orange-light dark:text-orange-light">
-              A JORNADA PARA SUA MELHOR VERSÃO COMEÇA AGORA!
-            </p>
-            <p className="text-2xl md:text-5xl font-inter font-black text-center text-orange px-4">
-              Pare de tentar emagrecer sozinha e comece a vencer com o apoio de
-              quem passou e passa pelo mesmo que você!
-            </p>
-            <p className="text-center text-lg font-inter font-bold text-black mt-10 dark:text-white">
-              Com as estratégias certas, tratar a obesidade e emagrecer se torna
-              mais fácil em nossa comunidade! Dê o primeiro passo hoje!
-            </p>
-            <div className="flex justify-center items-center mt-10">
-              <div className="inline-flex flex-col items-center gap-5">
-                <button className="bg-green cursor-pointer target:bg-orange text-white font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow">
-                  Aproveite a oferta e entre na comunidade!
-                </button>
-                <img src={Payments} alt="Compra" className="max-w-full h-7" />
+            <div className="items-center">
+              <p className="text-center font-bold my-6 text-orange-light dark:text-orange-light">
+                A JORNADA PARA SUA MELHOR VERSÃO COMEÇA AGORA!
+              </p>
+              <p className="text-2xl md:text-5xl font-inter font-black text-center justify-self-center max_width987 text-orange px-4">
+                Pare de tentar emagrecer sozinha e comece a vencer com o apoio de
+                quem passou e passa pelo mesmo que você!
+              </p>
+              <p className="text-center text-lg font-inter font-bold text-black justify-self-center mt-10 dark:text-white max_width678">
+                Com as estratégias certas, tratar a obesidade e emagrecer se torna
+                mais fácil em nossa comunidade! <br></br> Dê o primeiro passo hoje!
+              </p>
+              <div className="flex justify-center items-center mt-10">
+                <div className="inline-flex flex-col items-center gap-5">
+                  <button className="bg-green cursor-pointer text-white font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow pulse-button">
+                    Aproveite a oferta e entre na comunidade!
+                  </button>
+                  <img src={Payments} alt="Compra" className="max-w-full h-7" />
+                </div>
               </div>
+            </div>
+            <div className="inline-flex flex-col gabi_letter items-center mx-auto mt-8">
+              <p className="text-2xl md:text-3xl font-IFlower text-orange">
+                Conheça a Gabi!
+              </p>
+              <img src={Arrow} alt="Seta" className="mt-2 w-12" />
             </div>
           </div>
           <div className="w-full md:w-1/3 h-1/3 md:h-auto flex items-center justify-center md:pl-0 pl-10">
@@ -42,17 +50,11 @@ function App() {
             />
           </div>
         </div>
-        <div className="inline-flex flex-col items-center mx-auto mt-8 md:mt-5 absolute left-0 bottom-0 pl-12 pb-5">
-          <p className="text-2xl md:text-3xl font-IFlower text-orange">
-            Conheça a Gabi!
-          </p>
-          <img src={Arrow} alt="Seta" className="mt-2 w-12" />
-        </div>
       </div>
 
       <div className="py-10 bg-orange dark:bg-dark">
-        <div className="overflow-hidden p-6 place-self-center bg-light dark:bg-orange rounded-xl">
-          <div className="overflow-hidden rounded-xl w-fit">
+        <div className="overflow-hidden p-6 place-self-center bg-light dark:bg-orange insert_white_background_with_padding">
+          <div id="player" className="overflow-hidden w-fit">
             <iframe
               className="border-0"
               width="850"
@@ -102,7 +104,7 @@ function App() {
               <button
                 className={`${
                   index === 1 ? "bg-orange" : "bg-gray"
-                } w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow`}
+                  } w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow`}
               >
                 <p className="font-inter text-sm text-white">
                   {index === 0

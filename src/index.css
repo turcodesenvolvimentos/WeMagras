@@ -43,23 +43,16 @@
   background: var(--color-white);
 }
 
-.insert_white_background_with_padding {
-  padding: 25px;
-  place-self: center;
-  background: var(--color-white);
-  border-radius: 60px !important;
-}
-
 #player {
   overflow: hidden;
   border-radius: 30px !important;
 }
 
-.max_width987{
+.max_width987 {
   max-width: 987px;
 }
 
-.max_width678{
+.max_width678 {
   max-width: 678px;
 }
 
@@ -70,13 +63,45 @@
 }
 
 @keyframes pulse-zoom {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.1);
     opacity: 0.9;
+  }
+}
+
+.insert_white_background_with_padding {
+  place-self: center;
+  background: var(--color-white);
+}
+
+/* Estilo para telas grandes (tablet e desktop) */
+@media (min-width: 640px) {
+  .insert_white_background_with_padding {
+    padding: 25px;
+    border-radius: 60px !important;
+  }
+
+}
+
+/* Estilo para telas pequenas (mobile) */
+@media (max-width: 639px) {
+  .insert_white_background_with_padding {
+    padding: 0;
+    border-radius: 5px !important;
+    background: var(--color-orange);
+    width: calc(100% - 10px);
+  }
+
+  .swiper-slide {
+    margin-right: 0px !important;
+    display: flex !important;
   }
 }
 

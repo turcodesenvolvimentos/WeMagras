@@ -32,10 +32,20 @@ const ImageCarousel = () => {
     <div className="w-full max-w-4xl mx-auto insert_white_background_with_padding">
       <Swiper
         modules={[Navigation, Pagination]}
-        spaceBetween={20}
-        slidesPerView={3}
+        spaceBetween={5}
         navigation
         pagination={{ clickable: true }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1, // mobile
+          },
+          640: {
+            slidesPerView: 2, // tablets
+          },
+          1024: {
+            slidesPerView: 3, // desktops
+          },
+        }}
       >
         {images.map((src, index) => (
           <SwiperSlide key={index} className="flex justify-center">

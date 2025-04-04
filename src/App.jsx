@@ -3,6 +3,7 @@ import Payments from "./assets/icons/payments.svg";
 import Check from "./assets/icons/check.svg";
 import plans from "./utils/plans";
 import ImageGabi from "./assets/icons/image.png";
+import { FaWhatsapp } from "react-icons/fa";
 import ImageCarousel from "./utils/components/ImageCarousel.jsx";
 
 function App() {
@@ -54,11 +55,9 @@ function App() {
 
       <div className="py-10 bg-orange dark:bg-dark">
         <div className="overflow-hidden p-6 place-self-center bg-light dark:bg-orange insert_white_background_with_padding">
-          <div id="player" className="overflow-hidden w-fit">
+          <div id="player" className="w-full max-w-[850px] aspect-video min-h-[350px] mx-auto">
             <iframe
-              className="border-0"
-              width="850"
-              height="450"
+              className="w-full h-full border-0"
               src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ?si=ZMZnGjo7jGVgsjz_"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -71,6 +70,7 @@ function App() {
           <ImageCarousel />
         </div>
       </div>
+
       <div className="flex flex-col md:flex-row py-10 px-5 justify-center items-center gap-5 bg-light dark:bg-dark">
         {plans.map((item, index) => (
           <div className="border-2 border-orange dark:border-orange w-sm md:w-md min-h-110 px-8 py-10 rounded-4xl flex flex-col h-full">
@@ -101,10 +101,16 @@ function App() {
               ))}
             </div>
             <div className="flex justify-center mt-auto">
-              <button
-                className={`${
-                  index === 1 ? "bg-orange" : "bg-gray"
-                  } w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow`}
+              <a
+                href={
+                  index === 2
+                    ? "https://forms.gle/BhBuJbS4CNfBwKHi7"
+                    : "https://wa.me/message/BOQP43QYLUQYE1"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${index === 1 ? "bg-orange" : "bg-gray"
+                  } w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow text-center`}
               >
                 <p className="font-inter text-sm text-white">
                   {index === 0
@@ -113,10 +119,28 @@ function App() {
                       ? "Aproveite a oferta e entre na comunidade!"
                       : "Entre para Lista de Espera"}
                 </p>
-              </button>
+              </a>
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="py-10 bg-orange dark:bg-dark">
+        <div className="flex flex-col md:flex-row items-center gap-6 px-8 py-10 border-2 rounded-3xl shadow-md max-w-5xl mx-auto justify-between">
+          <p className="text-2xl md:text-4xl font-inter font-black text-center md:text-left">
+            Está com dúvidas? <br /> Entre em contato com a gente.
+          </p>
+
+          <a
+            href="https://wa.me/message/BOQP43QYLUQYE1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[linear-gradient(to_right,_#00B23A,_#F8AA2D)] flex items-center justify-center px-6 py-3 rounded-4xl text-white font-bold drop-shadow-md md\:w-2\/3 min-w-60 hover:drop-shadow-lg transition-shadow"
+          >
+            <FaWhatsapp size={20} />
+            Whatsapp
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -7,11 +7,11 @@ import ImageCarousel from "./utils/components/ImageCarousel.jsx";
 
 function App() {
   return (
-    <div className="overflow-y-auto">
-      <div className="background_white">
-        <div className="flex flex-col-reverse md:flex-row h-screen bg-light dark:bg-dark items-center justify-center">
+    <div className="overflow-y-auto overflow-x-hidden h-screen bg-light dark:bg-dark">
+      <div>
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center">
           <div className="w-full md:w-2/3 md:h-auto p-4 text-white flex flex-col">
-            <p className="text-4xl md:text-7xl font-humming text-center md:mx-20 text-orange">
+            <p className="text-4xl md:text-8xl font-humming md:mx-20 mt-5 mx-10 text-orange">
               WeMagras
             </p>
             <p className="text-center font-bold my-6 text-orange-light dark:text-orange-light">
@@ -42,70 +42,80 @@ function App() {
             />
           </div>
         </div>
-        <div
-          className="inline-flex flex-col items-center mx-auto mt-8 md:mt-5 absolute left-0
-          bottom-0 pl-12 pb-5 gabi_letter"
-        >
-          <p className="text-2xl md:text-3xl font-IFlower text_orange">
+        <div className="inline-flex flex-col items-center mx-auto mt-8 md:mt-5 absolute left-0 bottom-0 pl-12 pb-5">
+          <p className="text-2xl md:text-3xl font-IFlower text-orange">
             Conheça a Gabi!
           </p>
           <img src={Arrow} alt="Seta" className="mt-2 w-12" />
         </div>
       </div>
 
-      <div className="background_orange">
-        <div className="py-10 dark:bg-dark">
-          <div id="player" className="insert_white_background_with_padding">
+      <div className="py-10 bg-orange dark:bg-dark">
+        <div className="overflow-hidden p-6 place-self-center bg-light dark:bg-orange rounded-xl">
+          <div className="overflow-hidden rounded-xl w-fit">
             <iframe
-              className="border_with_"
+              className="border-0"
               width="850"
               height="450"
               src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ?si=ZMZnGjo7jGVgsjz_"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
           </div>
         </div>
         <div id="ImageCarousel" className="py-10 dark:bg-dark">
           <ImageCarousel />
         </div>
       </div>
-      <div className="background_white">
-        <div className="flex flex-col md:flex-row py-10 px-5 justify-center gap-5 bg-light dark:bg-dark">
-          {plans.map((item, index) => (
-            <div className="border-2 border-orange dark:border-orange-light w-sm h-md px-8 py-10 rounded-4xl">
-              {index === 1 && (
-                <div className="flex absolute left-1/2 transform -translate-x-1/2">
-                  <p className="font-inter text-orange-light text-xs bg-gray/10 px-2 rounded-sm">
+      <div className="flex flex-col md:flex-row py-10 px-5 justify-center items-center gap-5 bg-light dark:bg-dark">
+        {plans.map((item, index) => (
+          <div className="border-2 border-orange dark:border-orange w-sm md:w-md min-h-110 px-8 py-10 rounded-4xl flex flex-col h-full">
+            {index === 1 && (
+              <div className="flex justify-between">
+                <div className="flex justify-center items-center bg-gray/10 px-2 rounded-sm">
+                  <p className="font-inter text-orange-light text-xs">
                     RECOMENDADO
                   </p>
-                  <p className="font-inter text-red text-xs bg-red/10 px-2 rounded-sm">
-                    MAIS COMPRADO
-                  </p>
                 </div>
-              )}
-              <p className="font-inter text-xl font-black my-5 text-black dark:text-white">
-                {item.name}
-              </p>
-              <p className="font-inter text-sm text-gray font-light">
-                {item.description}
-              </p>
-              <div className="flex flex-col mt-5 mb-10">
-                {item.items.map((item) => (
-                  <div className="flex flex-row items-start gap-3">
-                    <img src={Check} alt="Check" className="mt-2 w-3" />
-                    <p className="font-inter text-sm text-gray">{item}</p>
-                  </div>
-                ))}
+                <div className="flex justify-center items-center bg-red/10 px-2 rounded-sm">
+                  <p className="font-inter text-red text-xs">MAIS COMPRADO</p>
+                </div>
               </div>
+            )}
+            <p className="font-inter text-xl font-black my-5 text-black dark:text-white">
+              {item.name}
+            </p>
+            <p className="font-inter text-sm text-gray font-light">
+              {item.description}
+            </p>
+            <div className="flex flex-col mt-5 mb-10">
+              {item.items.map((item, i) => (
+                <div key={i} className="flex flex-row items-start gap-3">
+                  <img src={Check} alt="Check" className="mt-2 w-3" />
+                  <p className="font-inter text-sm text-gray">{item}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+            <div className="flex justify-center mt-auto">
+              <button
+                className={`${
+                  index === 1 ? "bg-orange" : "bg-gray"
+                } w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow`}
+              >
+                <p className="font-inter text-sm text-white">
+                  {index === 0
+                    ? "Aproveite a oferta e emagreça agora"
+                    : index === 1
+                      ? "Aproveite a oferta e entre na comunidade!"
+                      : "Entre para Lista de Espera"}
+                </p>
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
-      {/* RODAPE */}
     </div>
   );
 }

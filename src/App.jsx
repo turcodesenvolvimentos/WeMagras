@@ -23,10 +23,6 @@ function App() {
                 Pare de tentar emagrecer sozinha e comece a vencer com o apoio de
                 quem passou e passa pelo mesmo que você!
               </p>
-              <p className="text-center text-lg font-inter font-bold text-black justify-self-center mt-10 dark:text-white max_width678">
-                Com as estratégias certas, tratar a obesidade e emagrecer se torna
-                mais fácil em nossa comunidade! <br></br> Dê o primeiro passo hoje!
-              </p>
               <div className="flex justify-center items-center mt-10">
                 <div className="inline-flex flex-col items-center gap-5">
                   <button className="bg-green cursor-pointer text-white font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow pulse-button">
@@ -52,13 +48,12 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className="py-10 bg-orange dark:bg-dark">
         <div className="overflow-hidden p-6 place-self-center bg-light dark:bg-orange insert_white_background_with_padding">
           <div id="player" className="w-full max-w-[850px] aspect-video min-h-[350px] mx-auto">
             <iframe
               className="w-full h-full border-0"
-              src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ?si=ZMZnGjo7jGVgsjz_"
+              src="https://www.youtube-nocookie.com/embed/3jD0Xs-BsNo?si=Lh9hCjcsqPPie3BG"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -66,15 +61,19 @@ function App() {
             />
           </div>
         </div>
+        <p className="text-center text-lg font-inter font-bold text-black justify-self-center mt-10 dark:text-white max_width678">
+          Com as estratégias certas, tratar a obesidade e emagrecer se torna
+          mais fácil em nossa comunidade! <br></br> Dê o primeiro passo hoje!
+        </p>
         <div id="ImageCarousel" className="py-10 dark:bg-dark">
           <ImageCarousel />
         </div>
       </div>
 
       <div className="flex flex-col md:flex-row py-10 px-5 justify-center items-center gap-5 bg-light dark:bg-dark">
-        {plans.map((item, index) => (
+        {plans.map((item) => (
           <div className="border-2 border-orange dark:border-orange w-sm md:w-md min-h-110 px-8 py-10 rounded-4xl flex flex-col h-full">
-            {index === 1 && (
+            {!!item.important && (
               <div className="flex justify-between">
                 <div className="flex justify-center items-center bg-gray/10 px-2 rounded-sm">
                   <p className="font-inter text-orange-light text-xs">
@@ -102,22 +101,14 @@ function App() {
             </div>
             <div className="flex justify-center mt-auto">
               <a
-                href={
-                  index === 2
-                    ? "https://forms.gle/BhBuJbS4CNfBwKHi7"
-                    : "https://wa.me/message/BOQP43QYLUQYE1"
-                }
+                href={item.linkToRedirect}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${index === 1 ? "bg-orange" : "bg-gray"
+                className={`${item.important ? "bg-orange" : "bg-gray"
                   } w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow text-center`}
               >
                 <p className="font-inter text-sm text-white">
-                  {index === 0
-                    ? "Aproveite a oferta e emagreça agora"
-                    : index === 1
-                      ? "Aproveite a oferta e entre na comunidade!"
-                      : "Entre para Lista de Espera"}
+                  {item.buttonMessage}
                 </p>
               </a>
             </div>

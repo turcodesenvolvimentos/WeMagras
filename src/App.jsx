@@ -11,7 +11,7 @@ function App() {
     <div className="overflow-y-auto overflow-x-hidden h-screen bg-light dark:bg-dark">
       <div className="flex flex-col">
         <div className="flex flex-col-reverse md:flex-row justify-center">
-          <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col">
+          <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col justify-between">
             <p className="text-4xl md:text-8xl font-humming md:mx-20 mt-5 mx-10 text-orange">
               WeMagras
             </p>

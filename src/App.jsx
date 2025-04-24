@@ -8,15 +8,15 @@ import ImageCarousel from "./utils/components/ImageCarousel.jsx";
 
 function App() {
   return (
-    <div className="overflow-y-auto overflow-x-hidden h-screen bg-light dark:bg-dark">
+    <div className="overflow-y-auto overflow-x-hidden h-screen bg-light">
       <div className="flex flex-col">
         <div className="flex flex-col-reverse md:flex-row justify-center">
-          <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col justify-between">
-            <p className="text-4xl md:text-8xl font-humming md:mx-20 mt-5 mx-10 text-orange">
+          <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col items-center justify-between">
+            <p className="text-10xl md:text-10xl font-humming md:mx-20 mt-5 mx-10 text-orange flex items-center">
               WeMagras
             </p>
             <div className="items-center">
-              <p className="text-center font-bold my-6 text-orange-light dark:text-orange-light">
+              <p className="text-center font-inter font-bold my-6 text-orange-light">
                 A JORNADA PARA SUA MELHOR VERSÃO COMEÇA AGORA!
               </p>
               <p className="text-2xl md:text-5xl font-inter font-black text-center justify-self-center max_width987 text-orange px-4">
@@ -25,7 +25,7 @@ function App() {
               </p>
               <div className="flex justify-center items-center mt-10">
                 <div className="inline-flex flex-col items-center gap-5">
-                  <button className="bg-green cursor-pointer text-white font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow pulse-button">
+                  <button className="bg-green font-inter cursor-pointer text-white font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow pulse-button">
                     Aproveite a oferta e entre na comunidade!
                   </button>
                   <img src={Payments} alt="Compra" className="max-w-full h-7" />
@@ -33,7 +33,7 @@ function App() {
               </div>
             </div>
             <div className="inline-flex flex-col gabi_letter items-center mx-auto mt-8">
-              <p className="text-2xl md:text-3xl font-IFlower text-orange">
+              <p className="text-2xl md:text-3xl font-humming text-orange">
                 Conheça a Gabi!
               </p>
               <img src={Arrow} alt="Seta" className="mt-2 w-12" />
@@ -48,8 +48,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="py-10 bg-orange dark:bg-dark">
-        <div className="overflow-hidden p-6 place-self-center bg-light dark:bg-orange insert_white_background_with_padding">
+      <div className="py-10 bg-orange">
+        <div className="overflow-hidden p-6 place-self-center bg-light insert_white_background_with_padding">
           <div id="player" className="w-full max-w-[850px] aspect-video min-h-[350px] mx-auto">
             <iframe
               className="w-full h-full border-0"
@@ -61,18 +61,18 @@ function App() {
             />
           </div>
         </div>
-        <p className="text-center text-lg font-inter font-bold text-black justify-self-center mt-10 dark:text-white max_width678">
+        <p className="text-center text-lg font-inter font-bold text-black justify-self-center mt-10 max_width678">
           Com as estratégias certas, tratar a obesidade e emagrecer se torna
           mais fácil em nossa comunidade! <br></br> Dê o primeiro passo hoje!
         </p>
-        <div id="ImageCarousel" className="py-10 dark:bg-dark">
+        <div id="ImageCarousel" className="py-10">
           <ImageCarousel />
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row py-10 px-5 justify-center items-center gap-5 bg-light dark:bg-dark">
+      <div className="flex flex-col md:flex-row py-10 px-5 justify-center items-center gap-5 bg-light">
         {plans.map((item) => (
-          <div className="border-2 border-orange dark:border-orange w-sm md:w-md min-h-110 px-8 py-10 rounded-4xl flex flex-col h-full">
+          <div className="border-2 border-orange w-sm md:w-md min-h-110 px-8 py-10 rounded-4xl flex flex-col h-full">
             {!!item.important && (
               <div className="flex justify-between">
                 <div className="flex justify-center items-center bg-gray/10 px-2 rounded-sm">
@@ -85,7 +85,7 @@ function App() {
                 </div>
               </div>
             )}
-            <p className="font-inter text-xl font-black my-5 text-black dark:text-white">
+            <p className="font-inter text-xl font-black my-5 text-black">
               {item.name}
             </p>
             <p className="font-inter text-sm text-gray font-light">
@@ -116,7 +116,7 @@ function App() {
         ))}
       </div>
 
-      <div className="py-10 bg-orange dark:bg-dark">
+      <div className="py-10 bg-orange">
         <div className="flex flex-col md:flex-row items-center gap-6 px-8 py-10 border-2 rounded-3xl shadow-md max-w-5xl mx-auto justify-between">
           <p className="text-2xl md:text-4xl font-inter font-black text-center md:text-left">
             Está com dúvidas? <br /> Entre em contato com a gente.
@@ -126,7 +126,7 @@ function App() {
             href="https://wa.me/message/BOQP43QYLUQYE1"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[linear-gradient(to_right,_#00B23A,_#F8AA2D)] flex items-center justify-center px-6 py-3 rounded-4xl text-white font-bold drop-shadow-md md\:w-2\/3 min-w-60 hover:drop-shadow-lg transition-shadow"
+            className="bg-[linear-gradient(to_right,_#00B23A,_#F8AA2D)] font-inter flex items-center justify-center px-6 py-3 rounded-4xl text-white font-bold drop-shadow-md md\:w-2\/3 min-w-60 hover:drop-shadow-lg transition-shadow"
           >
             <FaWhatsapp size={20} />
             Whatsapp

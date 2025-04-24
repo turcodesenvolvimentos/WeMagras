@@ -26,9 +26,11 @@
   --color-linear-gradient-3: #884beb;
   --color-linear-gradient-4: #ffb020;
 
+  --text-10xl: 8rem;
+  --text-10xl--line-height: 1;
+
   --font-humming: "Humming", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --font-IFlower: "Indie Flower", cursive;
 }
 
 .background_orange {

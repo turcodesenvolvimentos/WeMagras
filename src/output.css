@@ -32,6 +32,8 @@
     --text-5xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
+    --text-10xl: 8rem;
+    --text-10xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-bold: 700;
     --font-weight-black: 900;
@@ -54,7 +56,6 @@
     --color-green: #16a467;
     --font-humming: "Humming", sans-serif;
     --font-inter: "Inter", sans-serif;
-    --font-IFlower: "Indie Flower", cursive;
   }
 }
 @layer base {
@@ -430,9 +431,6 @@
   .text-center {
     text-align: center;
   }
-  .font-IFlower {
-    font-family: var(--font-IFlower);
-  }
   .font-humming {
     font-family: var(--font-humming);
   }
@@ -583,31 +581,6 @@
     @media (width >= 48rem) {
       font-size: var(--text-8xl);
       line-height: var(--tw-leading, var(--text-8xl--line-height));
-    }
-  }
-  .dark\:border-orange {
-    @media (prefers-color-scheme: dark) {
-      border-color: var(--color-orange);
-    }
-  }
-  .dark\:bg-dark {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-dark);
-    }
-  }
-  .dark\:bg-orange {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-orange);
-    }
-  }
-  .dark\:text-orange-light {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-orange-light);
-    }
-  }
-  .dark\:text-white {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-white);
     }
   }
 }

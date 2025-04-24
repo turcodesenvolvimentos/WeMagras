@@ -11,17 +11,17 @@ function App() {
     <div className="overflow-y-auto overflow-x-hidden h-screen bg-light">
       <div className="flex flex-col">
         <div className="flex flex-col-reverse md:flex-row justify-center">
-          <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col items-center justify-between">
-            <p className="text-10xl md:text-10xl font-humming md:mx-20 mt-5 mx-10 text-orange flex items-center">
-              WeMagras
-            </p>
+          <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col items-end justify-center">
             <div className="items-center">
+              <p className="text-10xl md:text-10xl font-humming md:mx-20 mx-10 text-orange flex justify-center">
+                WeMagras
+              </p>
               <p className="text-center font-inter font-bold my-6 text-orange-light">
                 A JORNADA PARA SUA MELHOR VERSÃO COMEÇA AGORA!
               </p>
               <p className="text-2xl md:text-5xl font-inter font-black text-center justify-self-center max_width987 text-orange px-4">
-                Pare de tentar emagrecer sozinha e comece a vencer com o apoio de
-                quem passou e passa pelo mesmo que você!
+                Pare de tentar emagrecer sozinha e comece a vencer com o apoio
+                de quem passou e passa pelo mesmo que você!
               </p>
               <div className="flex justify-center items-center mt-10">
                 <div className="inline-flex flex-col items-center gap-5">
@@ -49,8 +49,11 @@ function App() {
         </div>
       </div>
       <div className="py-10 bg-orange">
-        <div className="overflow-hidden p-6 place-self-center bg-light insert_white_background_with_padding">
-          <div id="player" className="w-full max-w-[850px] aspect-video min-h-[350px] mx-auto">
+        <div className="overflow-hidden mx-auto place-self-center bg-light insert_white_background_with_padding max-w-[850px] w-full">
+          <div
+            id="player"
+            className="w-full max-w-[850px] aspect-video min-h-[350px] mx-auto"
+          >
             <iframe
               className="w-full h-full border-0"
               src="https://www.youtube-nocookie.com/embed/3jD0Xs-BsNo?si=Lh9hCjcsqPPie3BG"
@@ -61,9 +64,9 @@ function App() {
             />
           </div>
         </div>
-        <p className="text-center text-lg font-inter font-bold text-black justify-self-center mt-10 max_width678">
+        <p className="text-center text-lg font-inter font-bold text-black justify-self-center mt-10">
           Com as estratégias certas, tratar a obesidade e emagrecer se torna
-          mais fácil em nossa comunidade! <br></br> Dê o primeiro passo hoje!
+          mais fácil em nossa comunidade! <br /> Dê o primeiro passo hoje!
         </p>
         <div id="ImageCarousel" className="py-10">
           <ImageCarousel />
@@ -104,8 +107,9 @@ function App() {
                 href={item.linkToRedirect}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${item.important ? "bg-orange" : "bg-gray"
-                  } w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow text-center`}
+                className={`${
+                  item.important ? "bg-orange" : "bg-gray"
+                } w-full box-border cursor-pointer font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow text-center`}
               >
                 <p className="font-inter text-sm text-white">
                   {item.buttonMessage}

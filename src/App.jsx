@@ -12,11 +12,11 @@ function App() {
       <div className="flex flex-col">
         <div className="flex flex-col-reverse md:flex-row justify-center">
           <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col items-end justify-center">
-            <div className="items-center">
+            <div className="items-center mt-auto">
               <p className="text-10xl md:text-10xl font-humming md:mx-20 mx-10 text-orange flex justify-center">
                 WeMagras
               </p>
-              <p className="text-center font-inter font-bold my-6 text-orange-light">
+              <p className="text-center font-inter font-bold mb-6 text-orange-light">
                 A JORNADA PARA SUA MELHOR VERSÃO COMEÇA AGORA!
               </p>
               <p className="text-2xl md:text-5xl font-inter font-black text-center justify-self-center max_width987 text-orange px-4">
@@ -32,7 +32,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="inline-flex flex-col gabi_letter items-center mx-auto mt-8">
+            <div className="inline-flex flex-col gabi_letter items-center mx-auto mt-auto">
               <p className="text-2xl md:text-3xl font-humming text-orange">
                 Conheça a Gabi!
               </p>

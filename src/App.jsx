@@ -13,7 +13,7 @@ function App() {
         <div className="flex flex-col-reverse md:flex-row justify-center">
           <div className="w-full md:w-2/3 md:h-auto text-white flex flex-col items-end justify-center">
             <div className="items-center mt-auto">
-              <p className="text-10xl md:text-10xl font-humming md:mx-20 mx-10 text-orange flex justify-center">
+              <p className="text-7xl md:text-10xl font-humming md:mx-20 mx-10 text-orange flex justify-center">
                 WeMagras
               </p>
               <p className="text-center font-inter font-bold mb-6 text-orange-light">
@@ -23,8 +23,8 @@ function App() {
                 Pare de tentar emagrecer sozinha e comece a vencer com o apoio
                 de quem passou e passa pelo mesmo que você!
               </p>
-              <div className="flex justify-center items-center mt-10">
-                <div className="inline-flex flex-col items-center gap-5">
+              <div className="flex justify-center items-center mt-10 ">
+                <div className="inline-flex flex-col items-center gap-5 ">
                   <button className="bg-green font-inter cursor-pointer text-white font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow pulse-button">
                     Aproveite a oferta e entre na comunidade!
                   </button>
@@ -120,7 +120,7 @@ function App() {
         ))}
       </div>
 
-      <div className="py-10 bg-orange">
+      <div className="py-10 bg-orange px-4">
         <div className="flex flex-col md:flex-row items-center gap-6 px-8 py-10 border-2 rounded-3xl shadow-md max-w-5xl mx-auto justify-between">
           <p className="text-2xl md:text-4xl font-inter font-black text-center md:text-left">
             Está com dúvidas? <br /> Entre em contato com a gente.

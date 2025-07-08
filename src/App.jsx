@@ -2,7 +2,7 @@ import Arrow from "./assets/icons/arrow.svg";
 import Payments from "./assets/icons/payments.svg";
 import Check from "./assets/icons/check.svg";
 import plans from "./utils/plans";
-import ImageGabi from "./assets/icons/image.png";
+import ImageGabi from "./assets/icons/gabi.png";
 import { FaWhatsapp } from "react-icons/fa";
 import ImageCarousel from "./utils/components/ImageCarousel.jsx";
 

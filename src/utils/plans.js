@@ -2,33 +2,34 @@ export default [
   {
     name: "Plano Básico",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu amet risus et ipsum.",
+      "Esse é o plano básico. Indicado para quem quer apenas assistir as gravações dos encontros da com a Gabi.",
     linkToRedirect: "https://pay.hub.la/GHoNR6jg1Jfz2H5lyE5c",
     buttonMessage: "Aproveite a oferta e emagreça agora",
-    items: ["Acesso a encontros gravados na plataforma HUBLA"],
+    items: ["Acesso por 1 ANO aos encontros gravados na plataforma HUBLA"],
   },
   {
     name: "Comunidade WeMagras",
     description:
-      "Ela vai te orientar e Mostrar o passo a passo específico para você, para a sua realidade.",
+      "Quem entra para a comunidade WeMagras vai poder entrar nos encontros ao vivo com a Gabi e convidados, vai poder perguntar dúvidas para a Gabi no grupo da comunidade no Telegram e muitas outras novidades!",
     important: true,
     linkToRedirect: "https://pay.hub.la/BYUDz3k224mIFzaXhXgT",
     buttonMessage: "Aproveite a oferta e entre na comunidade!",
     items: [
-      "Acesso a encontros gravados na plataforma HUBLA",
-      "Encontros ao vivo com a Gabi",
+      "Acesso por 1 ANO a Comunidade WeMagras na plataforma HUBLA",
+      "Encontros ao vivo com a Gabi e convidados especiais",
       "Acesso ao grupo do Telegram para falar direto com a Gabi e a Nicole",
+      "Suporte pelo Whatsapp"
     ],
   },
   {
     name: "Mentoria com a Gabi",
     description:
-      "A partir de 4 assinaturas conjuntas ganha 10% de desconto na matrícula",
+      "A mentoria é a forma de estar mais próxima da Gabi. Você terá reuniões on line individuais com a Gabi e com a Nicole em que elas vão conhecer a sua realidade específica e te orientar no detalhe como estabelecer uma rotina de combate a obesidade, de acordo com sua rotina e situação específica!",
     items: [
-      "Acesso a encontros gravados na plataforma HUBLA",
-      "Encontros ao vivo com a Gabi",
+      "Todos os Beneficios a Comunidade WeMagras por 1 Ano e mais",
+      "Sessões individuais e quinzenais online com a Gabi e a Nicole por 6 meses",
       "Acesso ao grupo do Telegram para falar direto com a Gabi e a Nicole",
-      "Tenha sessões individuais com a Gabi",
+      "Suporte pelo Whatsapp"
     ],
     buttonMessage: "Entre para Lista de Espera",
     linkToRedirect: "https://pay.hub.la/k0BZyqunq1nfTfftCt7s",

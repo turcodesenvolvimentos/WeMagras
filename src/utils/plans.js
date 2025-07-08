@@ -3,7 +3,7 @@ export default [
     name: "Plano Básico",
     description:
       "Esse é o plano básico. Indicado para quem quer apenas assistir as gravações dos encontros da com a Gabi.",
-    linkToRedirect: "https://pay.hub.la/GHoNR6jg1Jfz2H5lyE5c",
+    linkToRedirect: "https://pay.hub.la/baItYIozpMOP4axtPAvw",
     buttonMessage: "Aproveite a oferta e emagreça agora",
     items: ["Acesso por 1 ANO aos encontros gravados na plataforma HUBLA"],
   },

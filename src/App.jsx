@@ -16,18 +16,24 @@ function App() {
               <p className="text-7xl md:text-10xl font-humming md:mx-20 mx-10 text-orange flex justify-center">
                 WeMagras
               </p>
-              <p className="text-center font-inter font-bold mb-6 text-orange-light">
+              <p className="text-center font-inter font-normal mb-6 text-orange-light hidden md:block">
                 A JORNADA PARA SUA MELHOR VERSÃO COMEÇA AGORA!
               </p>
-              <p className="text-2xl md:text-5xl font-inter font-black text-center justify-self-center max_width987 text-orange px-4">
+              <p className="text-2xl md:text-5xl font-inter font-extralight text-center justify-self-center max_width987 text-orange px-4">
                 Pare de tentar emagrecer sozinha e comece a vencer com o apoio
                 de quem passou e passa pelo mesmo que você!
               </p>
               <div className="flex justify-center items-center mt-10 ">
                 <div className="inline-flex flex-col items-center gap-5 ">
-                  <button className="bg-green font-inter cursor-pointer text-white font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow pulse-button">
-                    Aproveite a oferta e entre na comunidade!
-                  </button>
+                  <a
+                    href="https://pay.hub.la/BYUDz3k224mIFzaXhXgT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="bg-green font-inter cursor-pointer text-white font-bold py-2 px-4 rounded-4xl drop-shadow-md hover:drop-shadow-lg transition-shadow pulse-button">
+                      Aproveite a oferta e entre na comunidade!
+                    </button>
+                  </a>
                   <img src={Payments} alt="Compra" className="max-w-full h-7" />
                 </div>
               </div>
@@ -64,7 +70,7 @@ function App() {
             />
           </div>
         </div>
-        <p className="text-center text-lg font-inter font-bold text-black justify-self-center mt-10">
+        <p className="text-center text-lg font-inter font-normal text-black justify-self-center mt-10">
           Com as estratégias certas, tratar a obesidade e emagrecer se torna
           mais fácil em nossa comunidade! <br /> Dê o primeiro passo hoje!
         </p>

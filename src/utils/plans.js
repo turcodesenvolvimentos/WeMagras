@@ -3,9 +3,9 @@ export default [
     name: "Plano Básico",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu amet risus et ipsum.",
-    linkToRedirect: "https://pay.hub.la/BYUDz3k224mIFzaXhXgT",
+    linkToRedirect: "https://pay.hub.la/GHoNR6jg1Jfz2H5lyE5c",
     buttonMessage: "Aproveite a oferta e emagreça agora",
-    items: ["Acesso as aulas gravadas na plataforma HUBLA"],
+    items: ["Acesso a encontros gravados na plataforma HUBLA"],
   },
   {
     name: "Comunidade WeMagras",
@@ -15,22 +15,22 @@ export default [
     linkToRedirect: "https://pay.hub.la/BYUDz3k224mIFzaXhXgT",
     buttonMessage: "Aproveite a oferta e entre na comunidade!",
     items: [
-      "Acesso as aulas gravadas na plataforma HUBLA",
+      "Acesso a encontros gravados na plataforma HUBLA",
       "Encontros ao vivo com a Gabi",
-      "Acesso ao grupo do Telegram para falar direto com a Gabi e a Nicole"
+      "Acesso ao grupo do Telegram para falar direto com a Gabi e a Nicole",
     ],
   },
   {
-    name: "Mentoria Individual",
+    name: "Mentoria com a Gabi",
     description:
-    "A partir de 4 assinaturas conjuntas ganha 10% de desconto na matrícula",
+      "A partir de 4 assinaturas conjuntas ganha 10% de desconto na matrícula",
     items: [
-      "Acesso as aulas gravadas na plataforma HUBLA",
+      "Acesso a encontros gravados na plataforma HUBLA",
       "Encontros ao vivo com a Gabi",
       "Acesso ao grupo do Telegram para falar direto com a Gabi e a Nicole",
-      "Tenha sessões individuais com a Gabi"
+      "Tenha sessões individuais com a Gabi",
     ],
     buttonMessage: "Entre para Lista de Espera",
-    linkToRedirect: "https://forms.gle/BhBuJbS4CNfBwKHi7",
+    linkToRedirect: "https://pay.hub.la/k0BZyqunq1nfTfftCt7s",
   },
 ];

@@ -32,6 +32,6 @@ export default [
       "Suporte pelo Whatsapp"
     ],
     buttonMessage: "Entre para Lista de Espera",
-    linkToRedirect: "https://pay.hub.la/k0BZyqunq1nfTfftCt7s",
+    linkToRedirect: "https://hub.la/g/k0BZyqunq1nfTfftCt7s",
   },
 ];

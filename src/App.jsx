@@ -104,7 +104,7 @@ function App() {
               {item.items.map((item, i) => (
                 <div key={i} className="flex flex-row items-start gap-3">
                   <img src={Check} alt="Check" className="mt-2 w-3" />
-                  <p className="font-inter text-sm text-gray">{item}</p>
+                  <p className={`font-inter text-sm ${item.colorText || "text-gray"}`}>{item.message}</p>
                 </div>
               ))}
             </div>

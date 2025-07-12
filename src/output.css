@@ -488,6 +488,9 @@
   .text-red {
     color: var(--color-red);
   }
+  .text-green {
+    color: var(--color-green);
+  }
   .text-white {
     color: var(--color-white);
   }
